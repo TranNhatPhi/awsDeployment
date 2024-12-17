@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>triển khai và kiểm thử ứng dụng springboot trên ec2 on AWS System Manager</title>
+    <link>//localhost:1313/vi/5-deployment-and-testing-in-ec2/</link>
+    <description>Recent content in triển khai và kiểm thử ứng dụng springboot trên ec2 on AWS System Manager</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="//localhost:1313/vi/5-deployment-and-testing-in-ec2/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

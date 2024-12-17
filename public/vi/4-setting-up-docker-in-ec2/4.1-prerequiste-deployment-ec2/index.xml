@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>các buớc chuẩn bị cho triển khai in ec2 on AWS System Manager</title>
+    <link>//localhost:1313/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/</link>
+    <description>Recent content in các buớc chuẩn bị cho triển khai in ec2 on AWS System Manager</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <atom:link href="//localhost:1313/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,113 @@
+[
+{
+	"uri": "//localhost:1313/vi/",
+	"title": "Session Management",
+	"tags": [],
+	"description": "",
+	"content": "Triển khai ứng dụng web trên AWS sử dụng EC2, RDS và S3 Tổng thể Trong dự án này, bạn sẽ tìm hiểu các nguyên tắc cốt lõi về triển khai và quản lý ứng dụng web trên AWS sử dụng EC2, RDS và S3. Bạn sẽ thiết lập hạ tầng, nơi EC2 xử lý logic ứng dụng, RDS quản lý dữ liệu quan hệ và S3 lưu trữ các tệp tĩnh, tạo nên một hệ thống trên nền tảng đám mây an toàn, có khả năng mở rộng và hiệu quả.\nNội dung Giới thiệu Yêu cầu chuẩn bị Thiết lập hạ tầng với EC2 và các dịch vụ AWS(s3,RDB) Triển khai ứng dụng trên EC2 triển khai và kiem thư api trên ec2 Dọn dẹp hệ thống "
+},
+{
+	"uri": "//localhost:1313/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/",
+	"title": "các buớc chuẩn bị cho triển khai in ec2",
+	"tags": [],
+	"description": "",
+	"content": "Hướng dẫn cài đặt Docker trên EC2, tạo môi trường Docker Compose cho PhpMyAdmin và MySQL, sau đó tạo cơ sở dữ liệu \u0026ldquo;myapp\u0026rdquo; trong container Docker.\ncác buớc chuẩn bị cho triển khai in ec2 Truy cập vào các buớc chuẩn bị cho triển khai in ec2 Cài đặt Docker bằng lệnh sudo snap install docker. Tạo Docker Compose cho PhpMyAdmin 8 trên Ubuntu EC2 bằng lệnh Create DockerCompose Phpmyadmin8 in ubuntu ec2. Tạo Docker Compose cho PhpMyAdmin 8 trên Ubuntu EC2 bằng lệnh docker-compose -f ./deployment.yaml up -d mysql8-container Truy cập vào ipv4 port:8100 login root in database 2. Truy cập vào create database myapp in container docker\ntên: myapp. chọn lay co so du lieu co san tren may tinh xem bảng đã tạo "
+},
+{
+	"uri": "//localhost:1313/vi/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Triển khai ứng dụng web trên AWS sử dụng EC2, RDS và S3 là một cách tiếp cận tối ưu để lưu trữ và quản lý các ứng dụng một cách an toàn, đáng tin cậy và có khả năng mở rộng trên nền tảng đám mây. Kiến trúc này tận dụng các dịch vụ cốt lõi của AWS, nơi EC2 xử lý logic ứng dụng, RDS quản lý cơ sở dữ liệu quan hệ và S3 lưu trữ các tài nguyên tĩnh. Việc tích hợp các dịch vụ này đảm bảo hiệu suất cao và đơn giản hóa vận hành.\nKhi áp dụng hệ thống này, bạn đạt được nhiều lợi ích: Hạ tầng dưới dạng mã (IaC): Tự động hóa việc triển khai hạ tầng bằng AWS CloudFormation hoặc Terraform đảm bảo tính nhất quán và có thể lặp lại. Triển khai đơn giản: Ứng dụng được triển khai trên các EC2 instance với sự can thiệp thủ công tối thiểu, trong khi RDS và S3 cung cấp giải pháp cơ sở dữ liệu và lưu trữ được quản lý. Tính sẵn sàng cao: Việc triển khai các dịch vụ trên nhiều vùng sẵn sàng (Availability Zones) đảm bảo khả năng chịu lỗi và độ tin cậy cao hơn. Hiệu quả chi phí: Mô hình trả phí theo nhu cầu của EC2, RDS và S3 giúp giảm thiểu chi phí bằng cách chỉ sử dụng tài nguyên cần thiết. Tăng cường bảo mật: Sử dụng các tính năng bảo mật của AWS như IAM roles, VPC và Security Groups đảm bảo an toàn cho dữ liệu và ứng dụng. Khả năng mở rộng: EC2 Auto Scaling và RDS read replicas cho phép hệ thống tự động điều chỉnh khối lượng công việc theo nhu cầu. Sẵn sàng tích hợp: Tích hợp tự nhiên với các dịch vụ AWS như CloudWatch để giám sát, IAM để kiểm soát truy cập và các dịch vụ khác tạo nên một hệ sinh thái hoàn chỉnh. Bằng cách tận dụng EC2, RDS và S3, kiến trúc này cung cấp một nền tảng vững chắc để triển khai ứng dụng web, đảm bảo khả năng mở rộng, tối ưu hóa chi phí và tuân thủ các thực tiễn tốt nhất về cơ sở hạ tầng đám mây. "
+},
+{
+	"uri": "//localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/",
+	"title": "Tao S3 ",
+	"tags": [],
+	"description": "",
+	"content": "Quy trình tạo S3 trong lab này bao gồm: truy cập vào dịch vụ S3, tạo bucket với tên deployment-image123, bật các cài đặt cần thiết, sau đó tải hình ảnh lên bằng cách chọn Upload và Choose image, cuối cùng xác nhận hình ảnh đã được tải lên thành công.\nĐi tới Tạo S3 Nhấn vào S3. Bấm vào Tạo nhóm. Tên jinmeister-datasource. Bấm vào Enable. "
+},
+{
+	"uri": "//localhost:1313/vi/2-prerequiste/",
+	"title": "Chuẩn Bị",
+	"tags": [],
+	"description": "",
+	"content": "Để triển khai một ứng dụng web tương tác với RDS và S3, bạn cần cấu hình một IAM Role để cấp quyền cần thiết cho các dịch vụ này. Trong bước chuẩn bị này, chúng ta sẽ tạo một IAM Role để đảm bảo các phiên bản EC2 có quyền truy cập cần thiết để tương tác với RDS và S3. Sau khi tạo xong IAM Role, chúng ta sẽ tiến hành cấu hình và triển khai ứng dụng trên EC2.\nNội Dung Create IAM Role Configure EC2 Instances "
+},
+{
+	"uri": "//localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/",
+	"title": "Tạo RDS",
+	"tags": [],
+	"description": "",
+	"content": "Quy trình tạo RDS bao gồm: truy cập vào dịch vụ RDS, chọn Create Database, lựa chọn loại cơ sở dữ liệu MySQL, cấu hình các thông số cần thiết và xác nhận để tạo cơ sở dữ liệu thành công.\nĐi tới Tạo S3.\nVào jinmeister-datasource. Bấm vào Thuộc tính Bấm vào Thông báo sự kiện Bấm vào Tạo thông báo sự kiện Đi tới Tạo thông báo sự kiện\nTên: data-upload/.txt . Nhấn vào Tất cả sự kiện tạo đối tượng. Nhấn vào Hàm Lambada. Bấm chọn từ hàm Lambda của bạn. Hàm Lambda: nhà sản xuất. "
+},
+{
+	"uri": "//localhost:1313/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/",
+	"title": "Thiết lập dockerhub trong ec2",
+	"tags": [],
+	"description": "",
+	"content": "Trong bước này, Hướng dẫn cài đặt Docker và cấu hình Docker Compose trên EC2 cho các dịch vụ như MySQL, PhpMyAdmin, Redis, và Spring Boot.\ncài dặt dockerhub-in-ec2 kiểm tra tệp cat deployment.yaml Correct the following code. Tạo các container Docker bằng lệnh docker-compose -f ./deployment.yaml up -d mysql8-container Kiểm tra các container đang chạy trên EC2 với lệnh docker ps Tạo container Spring Boot với lệnh docker-compose -f ./deployment.yaml up -d myapp-spring-container #scp -pr . root@103.124.93.29:/root/\rservices:\rmysql8-container:\rcontainer_name: mysql123\rimage: mysql:8.3.0 restart: always\renvironment:\rMYSQL_ROOT_PASSWORD: 123456\rMYSQL_DATABASE: myapp\rports:\r- 3308:3306\r#volumes: #- ./sql/myapp.sql:/docker-entrypoint-initdb.d/init-script.sql\rnetworks:\r- myapp-network phpmyadmin8-container:\r#intel host\rimage: phpmyadmin/phpmyadmin #image: arm64v8/phpmyadmin #choose this if you are running on Mac Apple Silicon(M1, M2,...)\rcontainer_name: phpmyadmin8-container\rrestart: always\rdepends_on:\r- mysql8-container\rports:\r- \u0026#34;8100:80\u0026#34; #port mapping\renvironment:\rPMA_HOST: mysql8-container #phpMyAdmin Host, PMA = PHP My Amin\rPMA_PORT: 3306\rUPLOAD_LIMIT: 500M\rnetworks:\r- myapp-network\rredis-container:\rimage: docker.io/redis:7.2.3\rcontainer_name: redis-container\rrestart: always\rports:\r- \u0026#34;6379:6379\u0026#34; # Port mapping for Redis, you can change the host port as needed\rvolumes:\r- ./redis-data:/data # Mount a volume for Redis data persistence\rnetworks:\r- myapp-network\rmyapp-spring-container: container_name: myapp-spring-container build:\rcontext: .\rdockerfile: DockerfileJavaSpring #docker tag \u0026lt;image_id\u0026gt; myapp-spring:1.0.0 ports:\r- 8099:8070\renvironment:\r#SPRING_DATASOURCE_URL: jdbc:mysql://mysql8-container:3306/myapp?serverTimezone=UTC\u0026amp;allowPublicKeyRetrieval=true\rSPRING_DATASOURCE_URL: jdbc:mysql://mysql123:3306/myapp?serverTimezone=UTC\u0026amp;allowPublicKeyRetrieval=true MYSQL_ROOT_PASSWORD: 123456\rREDIS_HOST: redis-container\rREDIS_PORT: 6379\r#Kafka broker\r# KAFKA_BROKER_SERVER: kafka-broker-01 # KAFKA_BROKER_PORT: 19092\r#depends_on only waits for the container to start, not for the service inside the container to be fully operational\rdepends_on: - mysql8-container\rnetworks:\r- myapp-network # healthcheck:\r# #test: [\u0026#34;CMD-SHELL\u0026#34;, \u0026#34;curl --fail http://localhost:8088/healthcheck/health || exit 1\u0026#34;]\r# test: [\u0026#34;CMD-SHELL\u0026#34;, \u0026#34;curl --fail http://localhost:8088/api/v1/actuator/health || exit 1\u0026#34;]\r# interval: 30s\r# timeout: 10s\r# retries: 3\r# start_period: 20s #20s after container created, health check # angular-container:\r# container_name: angular-container\r# build:\r# context: . # dockerfile: DockerfileAngular # Dockerfile để xây dựng ứng dụng Angular\r# ports:\r# - \u0026#34;6000:4200\u0026#34; # Port mapping, Angular sẽ chạy trên port 4200\r# environment:\r# - NODE_ENV=production\r# volumes:\r# - ./dist:/usr/share/nginx/html # Mount the Angular build directory to the Nginx container\r# depends_on:\r# - backend # Optionally add a dependency to your backend container if needed\r# networks:\r# - myapp-network\r# python-container:\r# container_name: python-app-container\r# build:\r# context: .\r# dockerfile: DockerfilePython # Dockerfile cho ứng dụng Python\r# ports:\r# - \u0026#34;6000:5000\u0026#34; # Mapping port cho Flask hoặc ứng dụng Python\r# environment:\r# - FLASK_APP=OCR4_python.py # Tên file ứng dụng Python của bạn\r# - FLASK_ENV=production # Môi trường sản xuất\r# depends_on:\r# - mysql8-container\r# - redis-container\r# networks:\r# - myapp-network\r#docker-compose -f ./deployment.yaml down #docker-compose -f ./deployment.yaml rm -s -f mysql8-container\r#docker-compose -f ./deployment.yaml up -d mysql8-container\r#docker-compose -f ./deployment.yaml rm -s -f phpmyadmin8-container\r#docker-compose -f ./deployment.yaml up -d phpmyadmin8-container\r#docker-compose -f ./deployment.yaml rm -s -f myapp-spring-container #docker-compose -f ./deployment.yaml up -d myapp-spring-container #docker logs myapp-spring-container\r#docker-compose -f ./deployment.yaml rm -s -f redis-container\r#docker-compose -f ./deployment.yaml up -d redis-container\r#docker-compose -f ./deployment.yaml rm -s -f angular-container\rnetworks:\rmyapp-network:\rname: myapp-network\rdriver: bridge "
+},
+{
+	"uri": "//localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/",
+	"title": "cài đặt docker image",
+	"tags": [],
+	"description": "",
+	"content": "Quá trình tạo S3, RDS và Docker image bao gồm ba bước chính. Đầu tiên, để tạo S3, bạn truy cập dịch vụ S3, tạo một bucket với tên deployment-image123, bật các cài đặt cần thiết và tải hình ảnh lên S3. Tiếp theo, trong bước tạo RDS, bạn truy cập dịch vụ RDS, tạo một cơ sở dữ liệu MySQL, cấu hình các thông số cần thiết và xác nhận để hoàn tất việc tạo cơ sở dữ liệu. Cuối cùng, đối với Docker, bạn truy cập Docker Hub, xây dựng Docker image bằng lệnh docker build, gắn thẻ với docker tag và đẩy image lên Docker Hub bằng lệnh docker push.\ntruy cập Create docker-image. truy cập dockerhub. lệnh docker build -t myapp:1.0.4 -f ./DockerfileJavaSpring . lệnh docker tag myapp:1.0.4 phi1234/myapp-spring:1.0.4 lệnh docker push phi1234/myapp:1.0.4 "
+},
+{
+	"uri": "//localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/",
+	"title": "thiết lập môi truơng ec2,s3,RDS",
+	"tags": [],
+	"description": "",
+	"content": "Quá trình tạo S3, RDS và Docker image bao gồm ba bước chính. Đầu tiên, để tạo S3, bạn truy cập dịch vụ S3, tạo một bucket với tên deployment-image123, bật các cài đặt cần thiết và tải hình ảnh lên S3. Tiếp theo, trong bước tạo RDS, bạn truy cập dịch vụ RDS, tạo một cơ sở dữ liệu MySQL, cấu hình các thông số cần thiết và xác nhận để hoàn tất việc tạo cơ sở dữ liệu. Cuối cùng, đối với Docker, bạn truy cập Docker Hub, xây dựng Docker image bằng lệnh docker build, gắn thẻ với docker tag và đẩy image lên Docker Hub bằng lệnh docker push.\nNội dung -tạo S3\n-tạo RDS -cài Dặt Docker image\n"
+},
+{
+	"uri": "//localhost:1313/vi/4-setting-up-docker-in-ec2/",
+	"title": "Cài đặt Kinesis",
+	"tags": [],
+	"description": "",
+	"content": "tóm lại trong bước này,Hướng dẫn cài đặt Docker và cấu hình Docker Compose trên EC2 cho các dịch vụ như MySQL, PhpMyAdmin, Redis và Spring Boot. Các bước bao gồm kiểm tra và chỉnh sửa tệp deployment.yaml, tạo các container Docker, và sử dụng các lệnh Docker Compose để quản lý các dịch vụ. Cấu hình chi tiết cho MySQL, PhpMyAdmin, Redis và Spring Boot được mô tả trong tệp YAML.\nNội dung: Tạo các bước cần chuẩn bị để đẩy lên môi trường ec2 thiết lậpdockerhub trên ec2 "
+},
+{
+	"uri": "//localhost:1313/vi/5-deployment-and-testing-in-ec2/",
+	"title": "triển khai và kiểm thử ứng dụng springboot trên ec2",
+	"tags": [],
+	"description": "",
+	"content": "In this step, check the inbound endpoint for Spring Boot on EC2, then test the API by registering and logging in via Postman, and verify the Product API using the GET method on Chrome.\n1.Kiểm tra inbound endpoint\n2.truy cập vào test IPv4 ec2\ntest API.\nkiểm thử phần mêm postman testapiresgiter. kiểm thử phần mêmpostman testAPilogin. chạy trên môi trương chomre method get Product "
+},
+{
+	"uri": "//localhost:1313/vi/6-cleanup/",
+	"title": "Dọn dẹp tài nguyên",
+	"tags": [],
+	"description": "",
+	"content": "Chúng tôi sẽ thực hiện các bước sau để xóa tài nguyên mà chúng tôi đã tạo trong bài tập này.\nxóa nhóm s3 truy cập vào Amazon S3 nhấn Instances. nhấn tên *deployment-image123. nhấn rỗng bucket. xoó tên deployment-image123. xóa cơ sở dữ liệu RDS truy cập RDS\nnhấn Applications. nhấn Actions sau đó bấm enter Delete. Xoa môi trường ec2 nhấn instance springboot-myappsql. nhấn stop instance nhấn teminate (delete) xóa IAM ROle nhấn Roles. nhấn Roles têndata-streaming-system-role sau đó nhấn Delete, tiep tuc nhập tên và xoó "
+},
+{
+	"uri": "//localhost:1313/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "//localhost:1313/vi/2-prerequiste/2.2-create-ec2/",
+	"title": "Tạo ec2",
+	"tags": [],
+	"description": "",
+	"content": "Tạo ec2 Trong bước này, tạo một EC2 instance trên AWS với loại t3.small (RAM 2GB) để làm môi trường server cho ứng dụng Spring Boot, đảm bảo hoạt động mượt mà và không bị giật lag. Cấu hình IAM Role để kết nối và lưu trữ hình ảnh vào S3. Cài đặt AWS CLI/SDK và Docker trên EC2. Sử dụng Docker để lưu trữ image của ứng dụng Spring Boot và triển khai container trên EC2. Cuối cùng, sử dụng CloudWatch để giám sát và cấu hình Auto Scaling nếu cần thiết.\ntruy cập EC2 tìm kiếm EC2. Nhấp vào EC2, sau dó Nhấp vào Launch instance to confirm. truy cập Create function Create: name:Springbootdeployment2 /Name: name:Springbootdeployment2. Nhấp vào Os:Ubuntu Server Nhấp vào Tạo Key pair Nhấp vào VPC Created Nhấp vào public subnet Nhấp vào Security Group Nhấp vào check information configure storage and Launch Instance "
+},
+{
+	"uri": "//localhost:1313/vi/2-prerequiste/2.1-create-iam-role/",
+	"title": "Tạo tôi",
+	"tags": [],
+	"description": "",
+	"content": "Phần này hướng dẫn các bước để tạo một IAM Role cho kiến trúc được mô tả trong sơ đồ. IAM Role này sẽ cho phép các phiên bản EC2 tương tác với S3 để lưu trữ và RDS để thực hiện các hoạt động cơ sở dữ liệu.\nTổng quan kiến trúc sau khi bạn hoàn thành bước này sẽ như sau:\nTạo vai trò IAM Đi tới Tạo vai trò Iam Bấm vào Iam. Bấm vào Tạo vai trò. Bấm vào Dịch vụ AWS, sau đó bấm vào ec2 để xác nhận. Đi tới Thêm quyền Nhấp vào AmazonEC2FullAccess. Nhấp vào AmazonS3FullAccess. Nhấp vào AmazonRDSFullAccess Đi tới Tên, đánh giá và tạo Tên data-streaming-system-role.. Bấm vào Tạo vai trò Nội dung Create EC2 "
+}]
