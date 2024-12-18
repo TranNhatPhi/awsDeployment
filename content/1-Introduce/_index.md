@@ -9,7 +9,6 @@ pre : " <b> 1. </b> "
 
 - By adopting this system, you achieve several benefits:
 
-+ Infrastructure as Code (IaC): Automating infrastructure deployment using AWS CloudFormation or Terraform ensures consistency and repeatability.
 + Simplified deployment: Applications are deployed on EC2 instances with minimal manual intervention, while RDS and S3 provide managed database and storage solutions.
 + High availability: By deploying services across multiple availability zones, the system ensures fault tolerance and increased reliability.
 + Cost efficiency: Pay-as-you-go pricing for EC2, RDS, and S3 minimizes expenses by only consuming necessary resources.
