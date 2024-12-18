@@ -1,5 +1,5 @@
 ---
-title : "Cài đặt Kinesis"
+title : "Thiết lập dockerhub trên ec2"
 date :  "`r Sys.Date()`" 
 weight : 4 
 chapter : false
