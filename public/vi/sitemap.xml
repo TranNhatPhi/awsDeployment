@@ -2,198 +2,198 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/awsDeployment/vi/</loc>
+    <loc>http://localhost:1313/vi/</loc>
     <lastmod>1970-01-01T07:33:42+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/"
+                href="http://localhost:1313/vi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/</loc>
+    <loc>http://localhost:1313/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/"
+                href="http://localhost:1313/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/"
+                href="http://localhost:1313/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/1-introduce/</loc>
+    <loc>http://localhost:1313/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/1-introduce/"
+                href="http://localhost:1313/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/1-introduce/"
+                href="http://localhost:1313/vi/1-introduce/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/</loc>
+    <loc>http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/"
+                href="http://localhost:1313/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/"
+                href="http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/2-prerequiste/</loc>
+    <loc>http://localhost:1313/vi/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/2-prerequiste/"
+                href="http://localhost:1313/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/2-prerequiste/"
+                href="http://localhost:1313/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/</loc>
+    <loc>http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/"
+                href="http://localhost:1313/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/"
+                href="http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/</loc>
+    <loc>http://localhost:1313/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/"
+                href="http://localhost:1313/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/"
+                href="http://localhost:1313/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/</loc>
+    <loc>http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/"
+                href="http://localhost:1313/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/"
+                href="http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/</loc>
+    <loc>http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/3-setting-up-environment-ec2-s3-docker/"
+                href="http://localhost:1313/3-setting-up-environment-ec2-s3-docker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/"
+                href="http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/</loc>
+    <loc>http://localhost:1313/vi/4-setting-up-docker-in-ec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/4-setting-up-docker-in-ec2/"
+                href="http://localhost:1313/4-setting-up-docker-in-ec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/"
+                href="http://localhost:1313/vi/4-setting-up-docker-in-ec2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/5-deployment-and-testing-in-ec2/</loc>
+    <loc>http://localhost:1313/vi/5-deployment-and-testing-in-ec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/5-deployment-and-testing-in-ec2/"
+                href="http://localhost:1313/5-deployment-and-testing-in-ec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/5-deployment-and-testing-in-ec2/"
+                href="http://localhost:1313/vi/5-deployment-and-testing-in-ec2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/6-cleanup/</loc>
+    <loc>http://localhost:1313/vi/6-cleanup/</loc>
     <lastmod>1970-01-01T07:33:42+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/6-cleanup/"
+                href="http://localhost:1313/6-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/6-cleanup/"
+                href="http://localhost:1313/vi/6-cleanup/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/categories/</loc>
+    <loc>http://localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/categories/"
+                href="http://localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/tags/</loc>
+    <loc>http://localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/tags/"
+                href="http://localhost:1313/vi/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/2-prerequiste/2.2-create-ec2/</loc>
+    <loc>http://localhost:1313/vi/2-prerequiste/2.2-create-ec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/2-prerequiste/2.2-create-ec2/"
+                href="http://localhost:1313/2-prerequiste/2.2-create-ec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/2-prerequiste/2.2-create-ec2/"
+                href="http://localhost:1313/vi/2-prerequiste/2.2-create-ec2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/awsDeployment/vi/2-prerequiste/2.1-create-iam-role/</loc>
+    <loc>http://localhost:1313/vi/2-prerequiste/2.1-create-iam-role/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/awsDeployment/2-prerequiste/2.1-create-iam-role/"
+                href="http://localhost:1313/2-prerequiste/2.1-create-iam-role/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="http://localhost:1313/awsDeployment/vi/2-prerequiste/2.1-create-iam-role/"
+                href="http://localhost:1313/vi/2-prerequiste/2.1-create-iam-role/"
                 />
   </url>
 </urlset>

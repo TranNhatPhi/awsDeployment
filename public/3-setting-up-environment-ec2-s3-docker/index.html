@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head><script src="/awsDeployment/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=awsDeployment/livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.134.2">
     <meta name="description" content="To deploy a web application that interacts with RDS and S3, you need to configure an IAM Role that grants permissions for these services">
 <meta name="author" content="phivt1234@gmail.com">
 
-    <link rel="icon" href="/awsDeployment/images/favicon.png" type="image/png">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
 
     <title>setting-up-environment-ec2-s3-docker :: AWS System Monitoring and Data Streaming</title>
 
     
-    <link href="/awsDeployment/css/nucleus.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/fontawesome-all.min.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/hybrid.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/featherlight.min.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/perfect-scrollbar.min.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/auto-complete.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/atom-one-dark-reasonable.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/theme.css?1734595846" rel="stylesheet">
-    <link href="/awsDeployment/css/hugo-theme.css?1734595846" rel="stylesheet">
+    <link href="/css/nucleus.css?1734596747" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1734596747" rel="stylesheet">
+    <link href="/css/hybrid.css?1734596747" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1734596747" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1734596747" rel="stylesheet">
+    <link href="/css/auto-complete.css?1734596747" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1734596747" rel="stylesheet">
+    <link href="/css/theme.css?1734596747" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1734596747" rel="stylesheet">
     
-    <link href="/awsDeployment/css/theme-workshop.css?1734595846" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1734596747" rel="stylesheet">
     
     
 
-    <script src="/awsDeployment/js/jquery-3.3.1.min.js?1734595846"></script>
+    <script src="/js/jquery-3.3.1.min.js?1734596747"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/awsDeployment/3-setting-up-environment-ec2-s3-docker/">
+  <body class="" data-url="/3-setting-up-environment-ec2-s3-docker/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/awsDeployment/js/lunr.min.js?1734595846"></script>
-<script type="text/javascript" src="/awsDeployment/js/auto-complete.js?1734595846"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1734596747"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1734596747"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:1313\/awsDeployment\/";
+        var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/awsDeployment/js/search.js?1734595846"></script>
+<script type="text/javascript" src="/js/search.js?1734596747"></script>
 
     
   </div>
@@ -82,12 +82,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/1-introduce/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/1-introduce/">
+      <a href="/1-introduce/">
            <b> 1. </b> Introduction
           
             <i class="fas fa-check read-icon"></i>
@@ -108,12 +108,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/2-prerequiste/" title="Preparation" class="dd-item 
+    <li data-nav-id="/2-prerequiste/" title="Preparation" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/2-prerequiste/">
+      <a href="/2-prerequiste/">
            <b> 2. </b> Preparation
           
             <i class="fas fa-check read-icon"></i>
@@ -139,12 +139,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/2-prerequiste/2.1-create-iam-role/" title="Create Iam" class="dd-item 
+    <li data-nav-id="/2-prerequiste/2.1-create-iam-role/" title="Create Iam" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/2-prerequiste/2.1-create-iam-role/">
+      <a href="/2-prerequiste/2.1-create-iam-role/">
            <b> 2.1 </b> Create Iam
           
             <i class="fas fa-check read-icon"></i>
@@ -167,12 +167,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/2-prerequiste/2.2-create-ec2/" title="Create ec2" class="dd-item 
+    <li data-nav-id="/2-prerequiste/2.2-create-ec2/" title="Create ec2" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/2-prerequiste/2.2-create-ec2/">
+      <a href="/2-prerequiste/2.2-create-ec2/">
            <b> 2.2 </b> Create ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -202,12 +202,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/3-setting-up-environment-ec2-s3-docker/" title="setting-up-environment-ec2-s3-docker" class="dd-item 
+    <li data-nav-id="/3-setting-up-environment-ec2-s3-docker/" title="setting-up-environment-ec2-s3-docker" class="dd-item 
         
         active
         
         ">
-      <a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/">
+      <a href="/3-setting-up-environment-ec2-s3-docker/">
            <b> 3. </b> setting-up-environment-ec2-s3-docker
           
             <i class="fas fa-check read-icon"></i>
@@ -233,12 +233,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Create S3-uploadimage" class="dd-item 
+    <li data-nav-id="/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Create S3-uploadimage" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/">
+      <a href="/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/">
            <b> 3.1. </b> Create S3-uploadimage
           
             <i class="fas fa-check read-icon"></i>
@@ -261,12 +261,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/" title="Create-RDS" class="dd-item 
+    <li data-nav-id="/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/" title="Create-RDS" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">
+      <a href="/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">
            <b> 3.2 </b> Create-RDS
           
             <i class="fas fa-check read-icon"></i>
@@ -289,12 +289,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/" title="Setup docker image" class="dd-item 
+    <li data-nav-id="/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/" title="Setup docker image" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/">
+      <a href="/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/">
            <b> 3.3 </b> Setup docker image
           
             <i class="fas fa-check read-icon"></i>
@@ -324,12 +324,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/4-setting-up-docker-in-ec2/" title="set up docker in ec2" class="dd-item 
+    <li data-nav-id="/4-setting-up-docker-in-ec2/" title="set up docker in ec2" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/4-setting-up-docker-in-ec2/">
+      <a href="/4-setting-up-docker-in-ec2/">
            <b> 4. </b> set up docker in ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -355,12 +355,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/" title="prerequiste-deployment-ec2" class="dd-item 
+    <li data-nav-id="/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/" title="prerequiste-deployment-ec2" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/">
+      <a href="/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/">
            <b> 4.1 </b> prerequiste-deployment-ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -383,12 +383,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/" title="setup dockerhub in ec2" class="dd-item 
+    <li data-nav-id="/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/" title="setup dockerhub in ec2" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/">
+      <a href="/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/">
            <b> 4.2 </b> setup dockerhub in ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -418,12 +418,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/5-deployment-and-testing-in-ec2/" title="Deployment and Testing in ec2" class="dd-item 
+    <li data-nav-id="/5-deployment-and-testing-in-ec2/" title="Deployment and Testing in ec2" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/5-deployment-and-testing-in-ec2/">
+      <a href="/5-deployment-and-testing-in-ec2/">
            <b> 5. </b> Deployment and Testing in ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -444,12 +444,12 @@
  
   
     
-    <li data-nav-id="/awsDeployment/6-cleanup/" title="Clean up resources" class="dd-item 
+    <li data-nav-id="/6-cleanup/" title="Clean up resources" class="dd-item 
         
         
         
         ">
-      <a href="/awsDeployment/6-cleanup/">
+      <a href="/6-cleanup/">
           <b>6. </b>Clean up resources
           
             <i class="fas fa-check read-icon"></i>
@@ -497,7 +497,7 @@
                   
                     
                     
-                      <option id="en" value="http://localhost:1313/awsDeployment/3-setting-up-environment-ec2-s3-docker/" selected>English</option>
+                      <option id="en" value="http://localhost:1313/3-setting-up-environment-ec2-s3-docker/" selected>English</option>
                     
                   
               
@@ -511,7 +511,7 @@
                   
                     
                     
-                      <option id="vi" value="http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/">Tiếng Việt</option>
+                      <option id="vi" value="http://localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/">Tiếng Việt</option>
                     
                   
               
@@ -580,17 +580,6 @@
               <div>
                 <div id="top-bar">
                 
-                  
-                  
-                  
-                  <div id="top-github-link">
-                    <a class="github-link" title='Edit this page' href="https://trannhatphi.github.io/awsDeployment/3-Setting-Up-Environment-ec2-s3-docker/_index.md" target="blank">
-                      <i class="fas fa-code-branch"></i>
-                      <span id="top-github-link-text">Edit this page</span>
-                    </a>
-                  </div>
-                  
-                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -611,7 +600,7 @@
             
           
           
-            <a href='/awsDeployment/'>Session Management</a> > setting-up-environment-ec2-s3-docker
+            <a href='/'>Session Management</a> > setting-up-environment-ec2-s3-docker
           
         
           
@@ -656,9 +645,9 @@
 
 	<p>Quá trình tạo S3, RDS và Docker images bao gồm ba bước chính. Đầu tiên, để tạo S3, bạn truy cập dịch vụ S3, tạo một bucket có tên deployment-image123, bật các cài đặt cần thiết và tải hình ảnh lên S3. Tiếp theo, để tạo RDS, bạn truy cập dịch vụ RDS, tạo một cơ sở dữ liệu MySQL, cấu hình các tham số cần thiết và xác nhận để hoàn tất việc tạo cơ sở dữ liệu. Cuối cùng, với Docker, bạn truy cập Docker Hub, xây dựng Docker image bằng lệnh docker build, gắn thẻ với docker tag và đẩy image lên Docker Hub bằng lệnh docker push.</p>
 <h3 id="content">Content</h3>
-<p>-<a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/">Create S3 uploadimage</a></p>
-<p>-<a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">Create RDS</a>
--<a href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/">setup Docker image</a></p>
+<p>-<a href="/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/">Create S3 uploadimage</a></p>
+<p>-<a href="/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">Create RDS</a>
+-<a href="/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/">setup Docker image</a></p>
 
 
 
@@ -924,10 +913,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/awsDeployment/2-prerequiste/2.2-create-ec2/" title="Create ec2"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-prerequiste/2.2-create-ec2/" title="Create ec2"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Create S3-uploadimage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Create S3-uploadimage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -937,19 +926,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/awsDeployment/js/clipboard.min.js?1734595846"></script>
-    <script src="/awsDeployment/js/perfect-scrollbar.min.js?1734595846"></script>
-    <script src="/awsDeployment/js/perfect-scrollbar.jquery.min.js?1734595846"></script>
-    <script src="/awsDeployment/js/jquery.sticky.js?1734595846"></script>
-    <script src="/awsDeployment/js/featherlight.min.js?1734595846"></script>
-    <script src="/awsDeployment/js/highlight.pack.js?1734595846"></script>
+    <script src="/js/clipboard.min.js?1734596747"></script>
+    <script src="/js/perfect-scrollbar.min.js?1734596747"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1734596747"></script>
+    <script src="/js/jquery.sticky.js?1734596747"></script>
+    <script src="/js/featherlight.min.js?1734596747"></script>
+    <script src="/js/highlight.pack.js?1734596747"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/awsDeployment/js/modernizr.custom-3.6.0.js?1734595846"></script>
-    <script src="/awsDeployment/js/learn.js?1734595846"></script>
-    <script src="/awsDeployment/js/hugo-learn.js?1734595846"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1734596747"></script>
+    <script src="/js/learn.js?1734596747"></script>
+    <script src="/js/hugo-learn.js?1734596747"></script>
 
-    <link href="/awsDeployment/mermaid/mermaid.css?1734595846" rel="stylesheet" />
-    <script src="/awsDeployment/mermaid/mermaid.js?1734595846"></script>
+    <link href="/mermaid/mermaid.css?1734596747" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1734596747"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

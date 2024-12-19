@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Session Management on AWS System Monitoring and Data Streaming</title>
-    <link>http://localhost:1313/awsDeployment/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Session Management on AWS System Monitoring and Data Streaming</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/awsDeployment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
