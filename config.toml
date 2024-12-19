@@ -16,6 +16,7 @@ home = [ "HTML", "RSS", "JSON"]
   canonifyURLs = true
   disableBreadcrumb = false
   disableNextPrev = false
+  canonifyURLs = true
   
 [Languages]
 [Languages.en]
