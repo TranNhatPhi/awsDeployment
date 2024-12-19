@@ -15,7 +15,6 @@ home = [ "HTML", "RSS", "JSON"]
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
-  canonifyURLs = true
   
 [Languages]
 [Languages.en]
