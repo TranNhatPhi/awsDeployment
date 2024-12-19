@@ -1,9 +1,5 @@
 ---
-<<<<<<< .mine
-title : "thiết lập dockerhub trên ec2"
-=======
 title : "Thiết lập dockerhub trên ec2"
->>>>>>> .theirs
 date :  "`r Sys.Date()`" 
 weight : 4 
 chapter : false
