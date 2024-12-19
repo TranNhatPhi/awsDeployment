@@ -10,7 +10,7 @@ chapter: false
 ### Overall
 In this lab, you will learn the core principles of deploying and managing web applications on AWS using EC2, RDS, and S3. You will set up the infrastructure, where EC2 handles application logic, RDS manages relational data, and S3 stores static files, creating a secure, scalable, and efficient cloud-based system.
 
-![ConnectPrivate](/images/Workshop2aws.drawio.png) 
+![ConnectPrivate](/images/Workshop2aws.png) 
 
 ### Content
 1. [Introduction](1-introduce/)

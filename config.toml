@@ -1,5 +1,6 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
+canonifyURLs = true
 baseURL="https://trannhatphi.github.io/"
 # For search functionality
 [outputs]
@@ -15,7 +16,7 @@ home = [ "HTML", "RSS", "JSON"]
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
-  canonifyURLs = true
+  
   
 [Languages]
 [Languages.en]
