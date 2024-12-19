@@ -9,7 +9,7 @@ chapter : false
 ### Tổng thể
 Trong dự án này, bạn sẽ tìm hiểu các nguyên tắc cốt lõi về triển khai và quản lý ứng dụng web trên AWS sử dụng EC2, RDS và S3. Bạn sẽ thiết lập hạ tầng, nơi EC2 xử lý logic ứng dụng, RDS quản lý dữ liệu quan hệ và S3 lưu trữ các tệp tĩnh, tạo nên một hệ thống trên nền tảng đám mây an toàn, có khả năng mở rộng và hiệu quả.
 
-![ConnectPrivate](/images/Workshop2aws.png) 
+![ConnectPrivate](/images/workshop2aws.png) 
 
 ### Nội dung
 
