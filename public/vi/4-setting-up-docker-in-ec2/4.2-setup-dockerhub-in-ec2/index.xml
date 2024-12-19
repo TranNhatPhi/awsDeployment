@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thiết lập dockerhub trong ec2 on AWS System Manager</title>
-    <link>//localhost:1313/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/</link>
+    <link>http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/</link>
     <description>Recent content in Thiết lập dockerhub trong ec2 on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="//localhost:1313/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/awsDeployment/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

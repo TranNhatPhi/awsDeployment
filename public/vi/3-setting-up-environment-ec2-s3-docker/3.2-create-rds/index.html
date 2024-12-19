@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/awsDeployment/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=awsDeployment/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.134.2">
-    <meta name="description" content="">
-<meta name="author" content="journeyoftheaverageguy@gmail.com">
+    <meta name="description" content="To deploy a web application that interacts with RDS and S3, you need to configure an IAM Role that grants permissions for these services">
+<meta name="author" content="phivt1234@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="/awsDeployment/images/favicon.png" type="image/png">
 
     <title>Tạo RDS :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1734466602" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1734466602" rel="stylesheet">
-    <link href="/css/hybrid.css?1734466602" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1734466602" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1734466602" rel="stylesheet">
-    <link href="/css/auto-complete.css?1734466602" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1734466602" rel="stylesheet">
-    <link href="/css/theme.css?1734466602" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1734466602" rel="stylesheet">
+    <link href="/awsDeployment/css/nucleus.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/fontawesome-all.min.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/hybrid.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/featherlight.min.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/perfect-scrollbar.min.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/auto-complete.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/atom-one-dark-reasonable.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/theme.css?1734594490" rel="stylesheet">
+    <link href="/awsDeployment/css/hugo-theme.css?1734594490" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1734466602" rel="stylesheet">
+    <link href="/awsDeployment/css/theme-workshop.css?1734594490" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1734466602"></script>
+    <script src="/awsDeployment/js/jquery-3.3.1.min.js?1734594490"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">
+  <body class="" data-url="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1734466602"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1734466602"></script>
+<script type="text/javascript" src="/awsDeployment/js/lunr.min.js?1734594490"></script>
+<script type="text/javascript" src="/awsDeployment/js/auto-complete.js?1734594490"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/localhost:1313\/\/vi";
+        var baseurl = "http:\/\/localhost:1313\/awsDeployment\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1734466602"></script>
+<script type="text/javascript" src="/awsDeployment/js/search.js?1734594490"></script>
 
     
   </div>
@@ -82,12 +82,12 @@
  
   
     
-    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/vi/1-introduce/">
+      <a href="/awsDeployment/vi/1-introduce/">
            <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
@@ -108,12 +108,12 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/" title="Chuẩn Bị" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/2-prerequiste/" title="Chuẩn Bị" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/">
+      <a href="/awsDeployment/vi/2-prerequiste/">
            <b> 2. </b> Chuẩn Bị
           
             <i class="fas fa-check read-icon"></i>
@@ -139,12 +139,12 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/2.2-create-ec2/" title="Tạo ec2" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/2-prerequiste/2.2-create-ec2/" title="Tạo ec2" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/2.2-create-ec2/">
+      <a href="/awsDeployment/vi/2-prerequiste/2.2-create-ec2/">
           Tạo ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -167,12 +167,12 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/2.1-create-iam-role/" title="Tạo tôi" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/2-prerequiste/2.1-create-iam-role/" title="Tạo tôi" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/2.1-create-iam-role/">
+      <a href="/awsDeployment/vi/2-prerequiste/2.1-create-iam-role/">
           Tạo tôi
           
             <i class="fas fa-check read-icon"></i>
@@ -202,12 +202,12 @@
  
   
     
-    <li data-nav-id="/vi/3-setting-up-environment-ec2-s3-docker/" title="thiết lập môi truơng ec2,s3,RDS" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/" title="thiết lập môi truơng ec2,s3,RDS" class="dd-item 
         parent
         
         
         ">
-      <a href="/vi/3-setting-up-environment-ec2-s3-docker/">
+      <a href="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/">
            <b> 3. </b> thiết lập môi truơng ec2,s3,RDS
           
             <i class="fas fa-check read-icon"></i>
@@ -233,12 +233,12 @@
  
   
     
-    <li data-nav-id="/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Tao S3 " class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Tao S3 " class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/">
+      <a href="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/">
            <b> 3.1. </b> Tao S3 
           
             <i class="fas fa-check read-icon"></i>
@@ -261,12 +261,12 @@
  
   
     
-    <li data-nav-id="/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/" title="Tạo RDS" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/" title="Tạo RDS" class="dd-item 
         
         active
         
         ">
-      <a href="/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">
+      <a href="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">
            <b> 3.2 </b> Tạo RDS
           
             <i class="fas fa-check read-icon"></i>
@@ -289,12 +289,12 @@
  
   
     
-    <li data-nav-id="/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/" title="cài đặt docker image" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/" title="cài đặt docker image" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/">
+      <a href="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/">
            <b> 3.2 </b> cài đặt docker image
           
             <i class="fas fa-check read-icon"></i>
@@ -324,13 +324,13 @@
  
   
     
-    <li data-nav-id="/vi/4-setting-up-docker-in-ec2/" title="Cài đặt Kinesis" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/4-setting-up-docker-in-ec2/" title="thiết lập dockerhub trên ec2" class="dd-item 
         
         
         
         ">
-      <a href="/vi/4-setting-up-docker-in-ec2/">
-           <b> 4. </b> Cài đặt Kinesis
+      <a href="/awsDeployment/vi/4-setting-up-docker-in-ec2/">
+           <b> 4. </b> thiết lập dockerhub trên ec2
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,12 +355,12 @@
  
   
     
-    <li data-nav-id="/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/" title="các buớc chuẩn bị cho triển khai in ec2" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/" title="các buớc chuẩn bị cho triển khai in ec2" class="dd-item 
         
         
         
         ">
-      <a href="/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/">
+      <a href="/awsDeployment/vi/4-setting-up-docker-in-ec2/4.1-prerequiste-deployment-ec2/">
            <b> 4.1 </b> các buớc chuẩn bị cho triển khai in ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -383,12 +383,12 @@
  
   
     
-    <li data-nav-id="/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/" title="Thiết lập dockerhub trong ec2" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/" title="Thiết lập dockerhub trong ec2" class="dd-item 
         
         
         
         ">
-      <a href="/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/">
+      <a href="/awsDeployment/vi/4-setting-up-docker-in-ec2/4.2-setup-dockerhub-in-ec2/">
            <b> 4.2 </b> Thiết lập dockerhub trong ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -418,12 +418,12 @@
  
   
     
-    <li data-nav-id="/vi/5-deployment-and-testing-in-ec2/" title="triển khai và kiểm thử ứng dụng springboot trên ec2" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/5-deployment-and-testing-in-ec2/" title="triển khai và kiểm thử ứng dụng springboot trên ec2" class="dd-item 
         
         
         
         ">
-      <a href="/vi/5-deployment-and-testing-in-ec2/">
+      <a href="/awsDeployment/vi/5-deployment-and-testing-in-ec2/">
            <b> 5. </b> triển khai và kiểm thử ứng dụng springboot trên ec2
           
             <i class="fas fa-check read-icon"></i>
@@ -444,12 +444,12 @@
  
   
     
-    <li data-nav-id="/vi/6-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/awsDeployment/vi/6-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
         
         
         
         ">
-      <a href="/vi/6-cleanup/">
+      <a href="/awsDeployment/vi/6-cleanup/">
           <b>6. </b>Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
@@ -497,7 +497,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">English</option>
+                      <option id="en" value="http://localhost:1313/awsDeployment/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/">English</option>
                     
                   
               
@@ -511,7 +511,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/" selected>Tiếng Việt</option>
+                      <option id="vi" value="http://localhost:1313/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.2-create-rds/" selected>Tiếng Việt</option>
                     
                   
               
@@ -580,6 +580,17 @@
               <div>
                 <div id="top-bar">
                 
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://trannhatphi.github.io/awsDeployment/3-Setting-Up-Environment-ec2-s3-docker/3.2-Create-RDS/_index.vi.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
@@ -604,7 +615,7 @@
             
           
           
-            <a href='/vi/'>Session Management</a> > <a href='/vi/3-setting-up-environment-ec2-s3-docker/'>thiết lập môi truơng ec2,s3,RDS</a> > Tạo RDS
+            <a href='/awsDeployment/vi/'>Session Management</a> > <a href='/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/'>thiết lập môi truơng ec2,s3,RDS</a> > Tạo RDS
           
         
           
@@ -938,10 +949,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Tao S3 "> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.1-create-s3-uploadimage/" title="Tao S3 "> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/" title="cài đặt docker image" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/awsDeployment/vi/3-setting-up-environment-ec2-s3-docker/3.3-setupdocker-image/" title="cài đặt docker image" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -951,19 +962,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1734466602"></script>
-    <script src="/js/perfect-scrollbar.min.js?1734466602"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1734466602"></script>
-    <script src="/js/jquery.sticky.js?1734466602"></script>
-    <script src="/js/featherlight.min.js?1734466602"></script>
-    <script src="/js/highlight.pack.js?1734466602"></script>
+    <script src="/awsDeployment/js/clipboard.min.js?1734594490"></script>
+    <script src="/awsDeployment/js/perfect-scrollbar.min.js?1734594490"></script>
+    <script src="/awsDeployment/js/perfect-scrollbar.jquery.min.js?1734594490"></script>
+    <script src="/awsDeployment/js/jquery.sticky.js?1734594490"></script>
+    <script src="/awsDeployment/js/featherlight.min.js?1734594490"></script>
+    <script src="/awsDeployment/js/highlight.pack.js?1734594490"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1734466602"></script>
-    <script src="/js/learn.js?1734466602"></script>
-    <script src="/js/hugo-learn.js?1734466602"></script>
+    <script src="/awsDeployment/js/modernizr.custom-3.6.0.js?1734594490"></script>
+    <script src="/awsDeployment/js/learn.js?1734594490"></script>
+    <script src="/awsDeployment/js/hugo-learn.js?1734594490"></script>
 
-    <link href="/mermaid/mermaid.css?1734466602" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1734466602"></script>
+    <link href="/awsDeployment/mermaid/mermaid.css?1734594490" rel="stylesheet" />
+    <script src="/awsDeployment/mermaid/mermaid.js?1734594490"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,6 +1,6 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
-
+baseURL="https://trannhatphi.github.io/awsDeployment/"
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -9,10 +9,11 @@ home = [ "HTML", "RSS", "JSON"]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
   # Git hub repo link
-  editURL = ""
-  description = ""
-  author = "journeyoftheaverageguy@gmail.com"
+  editURL = "https://trannhatphi.github.io/awsDeployment/"
+  description = "To deploy a web application that interacts with RDS and S3, you need to configure an IAM Role that grants permissions for these services"
+  author = "phivt1234@gmail.com"
   showVisitedLinks = true
+  canonifyURLs = true
   disableBreadcrumb = false
   disableNextPrev = false
   
